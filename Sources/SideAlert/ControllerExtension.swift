@@ -37,7 +37,7 @@ extension UIViewController{
         gestureRecognizer.direction = .up
         sideAlert.addGestureRecognizer(gestureRecognizer)
         
-        UIView.animate(withDuration: animated ? 0 : 0.4) {
+        UIView.animate(withDuration: animated ? 0.35 : 0) {
             sideAlert.frame = CGRect(x: inset, y: currentY, width: self.view.frame.width - inset*2, height: 50)
         }
         
@@ -51,7 +51,7 @@ extension UIViewController{
     private func hideSideAlert(_ sideAlert: SideAlert, animated: Bool = true){
         var frame = sideAlert.frame
         frame.origin.y = -50
-        UIView.animate(withDuration: animated ? 0 : 0.4, animations: {
+        UIView.animate(withDuration: animated ? 0.35 : 0, animations: {
             sideAlert.frame = frame
         }, completion: { _ in
             sideAlert.removeFromSuperview()
