@@ -9,8 +9,8 @@ Library has 2 parts: SideAlert and extension for UIViewController<p></p>
   <li>public init(title: String, color: UIColor, textColor: UIColor, font: UIFont) - alert's initializer</li>
   <li><tt>title: String</tt> - alert's title</li>
   <li><tt>color: UIColor</tt> - alert's background color</li>
-  <li><tt>textColor: UIColor</tt> - title's color (default: UIColor.systttBackground)</li>
-  <li><tt>font: UIFont</tt> - title's font (default: UIFont.systttFont(ofSize: 14, weight: .sttibold)))</li>
+  <li><tt>textColor: UIColor</tt> - title's color (default: UIColor.systemBackground)</li>
+  <li><tt>font: UIFont</tt> - title's font (default: UIFont.systemFont(ofSize: 17, weight: .medium)))</li>
 </ul>
 <p></p>
 UIViewController's extension have 1 method for displaying alert

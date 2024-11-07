@@ -9,7 +9,7 @@ public final class SideAlert: UIView{
     public convenience init(){
         self.init(title: "", color: .success)
     }
-    public init(title: String, color: UIColor, textColor: UIColor = .systemBackground, font: UIFont = .systemFont(ofSize: 14, weight: .semibold)){
+    public init(title: String, color: UIColor, textColor: UIColor = .systemBackground, font: UIFont = .systemFont(ofSize: 16, weight: .medium)){
         super.init(frame: .zero)
         setup(title: title, color: color, textColor: textColor, font: font)
     }
@@ -27,7 +27,7 @@ public final class SideAlert: UIView{
         label.textColor = textColor
         
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10).isActive = true
+        label.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 17).isActive = true
         label.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 10).isActive = true
         label.topAnchor.constraint(equalTo: self.topAnchor, constant: 1).isActive = true
         label.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 1).isActive = true
